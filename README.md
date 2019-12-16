@@ -73,16 +73,10 @@ Give an example
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **Sungyoun Seo(Yun)** - *Audio data processing, Neural network models* - [pleiades-s](https://github.com/pleiades-s/)
+* **Seunghyun Yeo** - *Audio data processing, Acoustic node*
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* [ksanjeevan](https://github.com/ksanjeevan/crnn-audio-classification) inspires us with its model architecture.
+* [Junwon Hwang](https://github.com/nuxlear?tab=overview&org=keras-team&from=2018-12-01&to=2018-12-31) helps technical details for audio classification.

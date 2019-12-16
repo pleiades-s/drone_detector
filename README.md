@@ -3,7 +3,7 @@
 We have worked on detecting the UAV’s DOA with a single node, which consists of two acoustic sensors and a Raspberry Pi, to overcome an acoustic sensor limitation through combining machine learning mechanisms (CNN, CRNN, ResNet50).
 
 ## Paper and presentation material
-* [Paper](https://drive.google.com/open?id=1hsRaTrgqBGXRUGHPR9OH9D8tZbOcwYst , "paper link")
+* [Paper]("https://drive.google.com/open?id=1hsRaTrgqBGXRUGHPR9OH9D8tZbOcwYst", "paper link")
 
 * [Presentation material](https://drive.google.com/open?id=1gxR1evrUhUNqPMxn_eckKDMqFEDJ8CZC , "presentation link")
 

@@ -1,4 +1,4 @@
-# Single Node Detection for Direction of Approach(DOA)
+# Single Node Detection on Direction of Approach(DOA)
 
 We have worked on detecting the UAV’s DOA with a single node, which consists of two acoustic sensors and a Raspberry Pi, to overcome an acoustic sensor limitation through combining machine learning mechanisms (CNN, CRNN, ResNet50).
 

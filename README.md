@@ -1,4 +1,4 @@
-# drone_detector
+# Single Node Detection for Direction of Approach
 2019 IITP project
 
 [raw data]

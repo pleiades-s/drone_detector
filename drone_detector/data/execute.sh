@@ -15,6 +15,6 @@ cd ../augmentation
 ./copy.sh
 cd ../code
 python3 trimming.py
-python3 test_trimm.py
+python3 test_trimming.py
 cd ../csv
 python3 test_csv.py

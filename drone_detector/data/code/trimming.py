@@ -50,11 +50,11 @@ for sec in DR_list: # DR_list = [0.1,0.2,0.3,0.4,0.5]
     for j in name_list: #name_list =['1','2']
         
         # print(path)
-        sr_data_dir = '/home/stealthdrone/Desktop/data/augmentation/Drone_audio_aug_' + str(j)
-        sr_csv_path = '/home/stealthdrone/Desktop/data/csv/Drone_audio_'+ str(j) +'.csv'
+        sr_data_dir = os.getcwd().split('code')[0]+'augmentation/Drone_audio_aug_' + str(j)
+        sr_csv_path = os.getcwd().split('code')[0]+'csv/Drone_audio_'+ str(j) +'.csv'
 
-        target_dir = '/home/stealthdrone/Desktop/data/trimmed/' + str(sec) + '/'
-        target_csv = '/home/stealthdrone/Desktop/data/csv/' + str(sec) + '.csv'
+        target_dir = os.getcwd().split('code')[0]+'trimmed/' + str(sec) + '/'
+        target_csv = os.getcwd().split('code')[0]+'csv/' + str(sec) + '.csv'
 
         metadata = pd.read_csv(sr_csv_path, sep=",")
         metadata = metadata.sort_values(by=['filename'])

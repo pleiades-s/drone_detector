@@ -1,8 +1,9 @@
 import librosa
 import numpy as np
+import os
 from timetable import start, end
 
-WORKING_DIR = '/home/stealthdrone/Desktop/data/'
+WORKING_DIR = os.getcwd().split('code')[0]
 ROW_AUDIO_PATH=WORKING_DIR + 'rawdata/'
 SR = 44100
 AUG=WORKING_DIR + 'augmentation/Drone_audio_'

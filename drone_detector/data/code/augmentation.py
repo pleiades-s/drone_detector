@@ -41,7 +41,7 @@ def augmentation(y):
 
 def save_newfile(y, name, label, fold, csv_path):
 
-    path = '/home/stealthdrone/Desktop/data/augmentation/Drone_audio_aug_' + fold
+    path = os.getcwd().split('code')[0]+'augmentation/Drone_audio_aug_' + fold
 
     print(path)
     nickname = ['ts_1', 'ts_2', 'ts_3','ts_4',
@@ -65,8 +65,8 @@ def save_newfile(y, name, label, fold, csv_path):
 
 for n, path in enumerate(dominant):
 
-    dataDir = '/home/stealthdrone/Desktop/data/augmentation/' + path
-    csvPath = '/home/stealthdrone/Desktop/data/csv/' + path + '.csv'
+    dataDir = os.getcwd().split('code')[0]+'augmentation/' + path
+    csvPath = os.getcwd().split('code')[0]+'csv/' + path + '.csv'
 
     #data dir iteration
     metadata = pd.read_csv(csvPath, sep=",")

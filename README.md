@@ -65,6 +65,11 @@ Those steps will be automatically executed by using the command below so you can
 ```
 ./execute.sh
 ```
+
+Also you can remove all the dataset with cmd bleow
+```
+./clear.sh
+```
 You can download UAV's raw audio data into [rawdata](https://github.com/pleiades-s/drone_detector/tree/master/drone_detector/data/rawdata) folder under [data](https://github.com/pleiades-s/drone_detector/tree/master/drone_detector/data) folder via this link ([Download](https://drive.google.com/open?id=1Ywlhga3Ak7Ep54mcfuoQ35kijVbK5aWU))
 
 

@@ -44,7 +44,7 @@ pytorch
    pip install scipy
    pip install tqdm
    ```
-   - If you have chosen to install anaconda then run below commands in anaconda prompt to install these packages
+   - If you have chosen to install anaconda then run below commands in anaconda prompt to install these packages, libraries
    ```
    conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
    conda install -c conda-forge librosa
@@ -63,9 +63,29 @@ Give an example
 ```
 
 ### Training a model
-blabla
+
+We have worked on three neural network models.
+
+- CNN1D: [cnn1d.py](https://github.com/pleiades-s/drone_detector/blob/master/drone_detector/code/cnn1d.py)
+- CRNN: [cnn-lstm.py](https://github.com/pleiades-s/drone_detector/blob/master/drone_detector/code/cnn-lstm.py)
+- ResNet50: [transfer_learning.py](https://github.com/pleiades-s/drone_detector/blob/master/drone_detector/code/transfer_learning.py)
+
+There are three different data length(0.1, 0.5, 1.0 second) as a input size so length arguments are required. 
+(ONLY 0.1, 0.5, 1.0 are available)
+If the arguments are more than one, then the models will be triained in a row.
+
+You can train a model with a command below
 ```
-Give an example
+python3 [model] [input length]
+```
+
+* Example
+```
+python3 cnn1d.py 0.1 0.5 1.0
+
+python3 cnn-lstm.py 0.1
+
+python3 transfer_learning.py 1.0 0.5 0.1
 ```
 
 ### Inferencing with a trained model

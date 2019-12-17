@@ -5,14 +5,12 @@ We have worked on detecting the UAV’s DOA with a single node, which consists o
 ## Table of Contents
 
 - [Paper and presentation material](#paper-and-presentation-material)
-- [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installing](#installing)
-- [Running the code](#running-the-code)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+  * [Preparing dataset](#preparing-dataset)
   * [Training a model](#training-a-model)
   * [Inferencing with a trained model](#inferencing-with-a-trained-model)
 - [Authors](#authors)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## Paper and presentation material
@@ -21,39 +19,45 @@ All details of this study are explained on materials listed below.
 
 * [Presentation material](https://drive.google.com/open?id=1gxR1evrUhUNqPMxn_eckKDMqFEDJ8CZC "presentation link")
 
-## Getting Started
+## Prerequisites
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+What things you need to install the software and how to install them:
 
-### Prerequisites
+1. Python 3.6 
+   - This setup requires that your machine has python 3.6 installed on it. you can refer to this url https://www.python.org/downloads/ to download python. Once you have python downloaded and installed, you will need to setup PATH variables (if you want to run python program directly, detail instructions are below in *how to run software section*). To do that check this: https://www.pythoncentral.io/add-python-to-path-python-is-not-recognized-as-an-internal-or-external-command/.  
+   - Setting up PATH variable is optional as you can also run program without it and more instructon are given below on this topic. 
+   
+2. Second and easier option is to download anaconda and use its anaconda prompt to run the commands. To install anaconda check this url https://www.anaconda.com/download/
+pytorch
+3. You will also need to download and install below 3 packages, 2 libraries after you install either python or anaconda from the steps above
+   - pytorch 
+   - librosa
+   - numpy
+   - scipy
+   - tqdm
+   
+  - if you have chosen to install python 3.6 then run below commands in command prompt/terminal to install these packages
+   ```
+   pip3 install torch torchvision
+   pip install librosa
+   pip install numpy
+   pip install scipy
+   pip install tqdm
+   ```
+   - if you have chosen to install anaconda then run below commands in anaconda prompt to install these packages
+   ```
+   conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+   conda install -c conda-forge librosa
+   conda install -c anaconda numpy
+   conda install -c anaconda scipy
+   conda install -c conda-forge tqdm
+   ```   
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the code
+## Usage
 
 Explain how to run the automated tests for this system
+
+### Preparing dataset
 
 ### Training a model
 Explain what these tests test and why

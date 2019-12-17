@@ -16,3 +16,9 @@
 ```
 ./execute.sh
 ```
+
+**And you can remove all the dataset with cmd bleow**
+  
+```
+./clear.sh
+```

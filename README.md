@@ -58,7 +58,7 @@ pytorch
 ### Preparing dataset
  - You can use dataset collected by us. And also you have to do some augmentation on our data set to let the model learn
  - There are 3 stages for preparing dataset. First is extraction Drone's sound from wav file. Second is augmentation on the dataset which were extracted before. Last one is trimming the augmented data.
- - You can download UAV's raw audio data via this link ([Download](https://drive.google.com/open?id=1Ywlhga3Ak7Ep54mcfuoQ35kijVbK5aWU))
+ - You can download UAV's raw audio data into [rawdata](https://github.com/pleiades-s/drone_detector/tree/master/drone_detector/data/rawdata) folder under [data](https://github.com/pleiades-s/drone_detector/tree/master/drone_detector/data) folder via this link ([Download](https://drive.google.com/open?id=1Ywlhga3Ak7Ep54mcfuoQ35kijVbK5aWU))
  - You can generate data for learnig and for test with the cmd below
 ```
 ./execute.sh

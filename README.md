@@ -58,6 +58,8 @@ pytorch
 ### Preparing dataset
 blabla
 
+You can download UAV's raw audio data via this link ([Download](https://drive.google.com/open?id=1Ywlhga3Ak7Ep54mcfuoQ35kijVbK5aWU)) 
+
 ```
 Give an example
 ```
@@ -71,7 +73,7 @@ We have worked on three neural network models.
 - ResNet50: [transfer_learning.py](https://github.com/pleiades-s/drone_detector/blob/master/drone_detector/code/transfer_learning.py)
 
 There are three different data length(0.1, 0.5, 1.0 second) as a input size so length arguments are required. 
-(ONLY 0.1, 0.5, 1.0 are available)
+(*0.1, 0.5 and 1.0 are ONLY available*)
 If the arguments are more than one, then the models will be triained in a row.
 
 You can train a model with a command below
@@ -89,7 +91,7 @@ python3 transfer_learning.py 1.0 0.5 0.1
 ```
 
 ### Inferencing with a trained model
-blabla
+
 ```
 Give an example
 ```

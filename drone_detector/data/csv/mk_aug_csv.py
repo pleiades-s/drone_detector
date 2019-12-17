@@ -1,7 +1,7 @@
 import csv
 import os
 
-dominant = '/home/stealthdrone/Desktop/data/csv/Drone_audio_'
+dominant = os.getcwd() + '/Drone_audio_'
 name_list = [1,2,3,4,5,6]
 
 for name in name_list:

@@ -99,7 +99,7 @@ Give an example
 
 ## Authors
 
-* **Sungyoun Seo(Yun)** - *Audio data processing, Neural network models* - [pleiades-s](https://github.com/pleiades-s/)
+* **Sungyoun Seo([pleiades-s](https://github.com/pleiades-s/))** - *Audio data processing, Neural network models*
 * **Seunghyun Yeo** - *Audio data processing, Acoustic node*
 
 ## Acknowledgments

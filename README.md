@@ -96,10 +96,17 @@ python3 transfer_learning.py 1.0 0.5 0.1
 
 ### Inferencing with a trained model
 
+You can inference trained model with [*inference.py*](https://github.com/pleiades-s/drone_detector/blob/master/drone_detector/code/inference.py) on test set.
+
+You can train a model with a command below
 ```
-Give an example
+python3 inference.py [trained model(.pth format)]
 ```
 
+* Example
+```
+python3 inference.py ../model/Conv_Lstm_mfcc_1_2019-11-19_19:50:20.pth
+```
 
 ## Authors
 
@@ -110,3 +117,5 @@ Give an example
 
 * [ksanjeevan](https://github.com/ksanjeevan/crnn-audio-classification) inspires us with its model architecture.
 * [Junwon Hwang](https://github.com/nuxlear?tab=overview&org=keras-team&from=2018-12-01&to=2018-12-31) helps technical details for audio classification.
+
+**If you have any question, please email me or write an issue. Any questions are welcome :)**

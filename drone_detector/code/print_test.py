@@ -14,8 +14,10 @@ def test_acc(model, test_loader):
         for data, labels in test_loader:
 
             # data.transpose_(1,2)
-            data = torch.as_tensor(data, dtype=torch.double, device='cuda')
-            labels = torch.as_tensor(labels, dtype=torch.long, device='cuda')
+            
+            device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            data = torch.as_tensor(data, dtype=torch.double, device=device)
+            labels = torch.as_tensor(labels, dtype=torch.long, device=device)
             model = model.double()
             outputs = model(data)
             pred = outputs.max(1)[1]
@@ -58,8 +60,9 @@ def test_acc_classes(model, test_loader, length, batch_size, f):
 
             # data.transpose_(1, 2)
 
-            data = torch.as_tensor(data, dtype=torch.double, device='cuda')
-            labels = torch.as_tensor(labels, dtype=torch.long, device='cuda')
+            device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            data = torch.as_tensor(data, dtype=torch.double, device=device)
+            labels = torch.as_tensor(labels, dtype=torch.long, device=device)
             
             outputs = model(data)
             pred = outputs.max(1)[1]
@@ -103,8 +106,10 @@ def inference_print(model, test_loader, f):
     for data, name in test_loader:
 
         # data.transpose_(1, 2)
-        data = torch.as_tensor(data, dtype=torch.float, device='cuda')
-        data = data.to('cuda')
+        
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        data = torch.as_tensor(data, dtype=torch.float, device=device)
+        # data = data.to('cuda')
 
         output = model(data)
         pred = output.max(1)[1]
@@ -124,7 +129,7 @@ def inference_print(model, test_loader, f):
     f.write(name+'\n')
 
     for i in range(len(prediction)):
-        if prediction[i][0] in correct_pred:
+        if True: #prediction[i][0] in correct_pred:
             if(name != prediction[i][0]):
                 name = prediction[i][0]
                 f.write('\n'+name +'\n')

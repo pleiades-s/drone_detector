@@ -8,12 +8,15 @@ import preprocessing
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device)
+
 #Config-------------------#
 data_length_list = ['0.1']
 test_batch = 16
 model_path = 'Conv_Lstm_mfcc_1_2019-11-21 03:47:46.pth' 
 model_name = 'Conv_Lstm_mfcc_1'
 #-------------------------#
+
+
 data_type = ''
 
 for data_length in data_length_list:

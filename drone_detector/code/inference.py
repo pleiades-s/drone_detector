@@ -15,7 +15,7 @@ test_batch = 16
 model_path = 'Conv_Lstm_mfcc_1_2019-11-21 03:47:46.pth' 
 model_name = 'Conv_Lstm_mfcc_1'
 #-------------------------#
-
+#TODO: get model info by using argument
 
 data_type = ''
 

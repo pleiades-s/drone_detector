@@ -104,7 +104,7 @@ Give an example
 ## Authors
 
 * **Sungyoun Seo([pleiades-s](https://github.com/pleiades-s/))** - *Audio data processing, Neural network models*
-* **Seunghyun Yeo** - *Audio data processing, Acoustic node*
+* **Seunghyun Yeo([yeoseunghyun](https://github.com/yeoseunghyun))** - *Audio data processing, Acoustic node*
 
 ## Acknowledgments
 

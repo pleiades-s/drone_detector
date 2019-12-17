@@ -1,4 +1,4 @@
-##Table of contents
+## Table of contents
   - augmentation folder for augmented data
   - code folder has extraction and trimming code for learning set test set. Also it has augmentation code for leraning set.
   - csv folder has mk_aug_csv.py an  mk_sec_csv.py files which are for the csv files that describing relation between trimmed data and label.

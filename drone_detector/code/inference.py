@@ -59,7 +59,7 @@ else:
     
 dataset_class = preprocessing.class_for_name('test_dronedataset', 'TEST_'+ data_type)
     
-model.load_state_dict(torch.load('/home/stealthdrone/Desktop/modeltopi/' + model_path))
+model.load_state_dict(torch.load(model_dir_path))
 model.to(device)
 model.eval()
 

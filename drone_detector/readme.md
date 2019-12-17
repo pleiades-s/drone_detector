@@ -1,18 +1,18 @@
 # Description of folders
 
 1. code
-  * model
+   * model
   
 2. data
-  * raw data
-  * audio pre-processing 
-  * csv
+   * raw data
+   * audio pre-processing 
+   * csv
   
 3. model
-  * *saved model
+   * saved model
   
 4. modeltopi
-  * *saved model is used test on Raspberry pi
+   * saved model which were used test on Raspberry pi
   
 5. output_log
-  * *text files which contain model train output log
+   * text files which contain model train output log

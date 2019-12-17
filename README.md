@@ -36,7 +36,7 @@ pytorch
    - scipy
    - tqdm
    
-  - if you have chosen to install python 3.6 then run below commands in command prompt/terminal to install these packages
+  - If you have chosen to install python 3.6 then run below commands in command prompt/terminal to install these packages
    ```
    pip3 install torch torchvision
    pip install librosa
@@ -44,7 +44,7 @@ pytorch
    pip install scipy
    pip install tqdm
    ```
-   - if you have chosen to install anaconda then run below commands in anaconda prompt to install these packages
+   - If you have chosen to install anaconda then run below commands in anaconda prompt to install these packages
    ```
    conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
    conda install -c conda-forge librosa
@@ -55,21 +55,21 @@ pytorch
 
 ## Usage
 
-Explain how to run the automated tests for this system
-
 ### Preparing dataset
-
-### Training a model
-Explain what these tests test and why
+blabla
 
 ```
 Give an example
 ```
 
+### Training a model
+blabla
+```
+Give an example
+```
+
 ### Inferencing with a trained model
-
-Explain what these tests test and why
-
+blabla
 ```
 Give an example
 ```

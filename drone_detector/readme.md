@@ -1,7 +1,7 @@
 # Description of folders
 
 1. code
-   * dataset loader
+   * audio pre-processing
    * model implementation
   
 2. data

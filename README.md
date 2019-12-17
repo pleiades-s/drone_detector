@@ -56,13 +56,17 @@ What things you need to install the software and how to install them:
 ## Usage
 
 ### Preparing dataset
- - You can use dataset collected by us. And also you have to do some augmentation on our data set to let the model learn
- - There are 3 stages for preparing dataset. First is extraction Drone's sound from wav file. Second is augmentation on the dataset which were extracted before. Last one is trimming the augmented data.
- - You can download UAV's raw audio data into [rawdata](https://github.com/pleiades-s/drone_detector/tree/master/drone_detector/data/rawdata) folder under [data](https://github.com/pleiades-s/drone_detector/tree/master/drone_detector/data) folder via this link ([Download](https://drive.google.com/open?id=1Ywlhga3Ak7Ep54mcfuoQ35kijVbK5aWU))
- - You can generate data for learnig and for test with the cmd below
+You can use dataset collected in person. There are 3 stages for preparing dataset. 
+  1. Extract UAV's audio from entire recorded audio file (wav format). 
+  2. Augment the extracted audio file. 
+  3. Split the augmented audio file into various length.
+  
+Those steps will be automatically executed by using the command below so you can use our dataset for train and test.
 ```
 ./execute.sh
 ```
+You can download UAV's raw audio data into [rawdata](https://github.com/pleiades-s/drone_detector/tree/master/drone_detector/data/rawdata) folder under [data](https://github.com/pleiades-s/drone_detector/tree/master/drone_detector/data) folder via this link ([Download](https://drive.google.com/open?id=1Ywlhga3Ak7Ep54mcfuoQ35kijVbK5aWU))
+
 
 ### Training a model
 

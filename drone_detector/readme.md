@@ -1,7 +1,8 @@
 # Description of folders
 
 1. code
-   * model
+   * dataset loader
+   * model implementation
   
 2. data
    * raw data

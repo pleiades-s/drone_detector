@@ -28,7 +28,7 @@ What things you need to install the software and how to install them:
    - Setting up PATH variable is optional as you can also run program without it and more instructon are given below on this topic. 
    
 2. Second and easier option is to download anaconda and use its anaconda prompt to run the commands. To install anaconda check this url https://www.anaconda.com/download/
-pytorch
+
 3. You will also need to download and install below 3 packages, 2 libraries after you install either python or anaconda from the steps above
    - pytorch 
    - librosa

@@ -97,7 +97,7 @@ def validation(model, epoch):
 for idx, data_length in enumerate(data_length_list):
 
     cur_time = str(datetime.datetime.now()).split(".")[0]
-    f = open("/home/stealthdrone/Desktop/output_log/" + model_list[idx] + '_' 
+    f = open(os.getcwd().split('code')[0]+"output_log/" + model_list[idx] + '_' 
             + data_length + '_' + cur_time + "_output.txt", "w")
 
     print("model = {}\ndata_length = {}\nnum_epoch = {}\ntrain_batch = {}\nlr = {}\nstep_size = {}"
@@ -105,8 +105,8 @@ for idx, data_length in enumerate(data_length_list):
     f.write("model = {}\ndata_length = {}\nnum_epoch = {}\ntrain_batch = {}\nlr = {}\nstep_size = {}"
         .format(model_list[idx], data_length,num_epoch,train_batch, lr, step_size))
     #PATH-------------------------------------------#
-    csv_path = '/home/stealthdrone/Desktop/data/csv/' + data_length + '.csv' 
-    file_path = '/home/stealthdrone/Desktop/data/trimmed/' + data_length
+    csv_path = os.getcwd().split('code')[0] + 'data/csv/' + data_length + '.csv' 
+    file_path = os.getcwd().split('code')[0] + 'data/trimmed/' + data_length
     #-----------------------------------------------#
 
     #LOAD DATA-----------------------------------------#
@@ -178,5 +178,5 @@ for idx, data_length in enumerate(data_length_list):
 
     f.close()
 
-    torch.save(model.state_dict(), '/home/stealthdrone/Desktop/model/'+model_list[idx]+'_' + cur_time + '.pth')
+    torch.save(model.state_dict(), os.getcwd().split('code')[0] + 'model/'+model_list[idx]+'_' + cur_time + '.pth')
     print("Model is successfully saved.")

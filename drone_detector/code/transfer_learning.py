@@ -126,7 +126,7 @@ def train_model(model, criterion, optimizer, scheduler, data_length, num_epochs=
     # load best model weights
     model.load_state_dict(best_model_wts)
     torch.save(best_model_wts, 
-                '/home/stealthdrone/Desktop/model/'+ pre_trained + '_' + data_length + '_' 
+                os.getcwd().split('code')[0]+'model/'+ pre_trained + '_' + data_length + '_' 
                 +cur_time + '.pth')
     print("Transfer learning model is successfully saved.\n\n")
 
@@ -136,7 +136,7 @@ def train_model(model, criterion, optimizer, scheduler, data_length, num_epochs=
 for data_length in data_length_list:
 
     cur_time = str(datetime.datetime.now()).split(".")[0]
-    f = open("/home/stealthdrone/Desktop/output_log/" + pre_trained + '_' + data_length 
+    f = open(os.getcwd().split('code')[0]+"output_log/" + pre_trained + '_' + data_length 
             + '_' + cur_time + "_output.txt", "w")
 
     print("data_length = {}\nnum_epoch = {}\ntrain_batch = {}\nlr = {}\nstep_size = {}\n"
@@ -145,24 +145,24 @@ for data_length in data_length_list:
         .format(data_length,num_epoch,train_batch, lr, step_size))
 
     #PATH-------------------------------------------#
-    csv_path = '/home/stealthdrone/Desktop/data/csv/' + data_length + '.csv' 
-    file_path = '/home/stealthdrone/Desktop/data/trimmed/' + data_length
+    csv_path = os.getcwd().split('code')[0]+'data/csv/' + data_length + '.csv' 
+    file_path = os.getcwd().split('code')[0]+'data/trimmed/' + data_length
     #-----------------------------------------------#
 
     #LOAD DATA-----------------------------------------#
     
     #WHEN ONLY MFCC
-    mean, std = preprocessing.mean_std_tensor(1, '/home/stealthdrone/Desktop/output_log/MFCC_mean_std_' + data_length)
+    #mean, std = preprocessing.mean_std_tensor(1, os.getcwd().split('code')[0]+'output_log/MFCC_mean_std_' + data_length)
 
-    normalize = transforms.Compose([transforms.ToTensor(), transforms.Normalize(mean, std)])
+    #normalize = transforms.Compose([transforms.ToTensor(), transforms.Normalize(mean, std)])
 
     preprocessing.fold_shuffle(csv_path)
     rand_num = randint(1, 6)
     dataset_class = preprocessing.class_for_name('dronedataset', data_type)
 
-    train_set = dataset_class(csv_path, file_path, range(1,7), [0],transform=normalize)
-    val_set = dataset_class(csv_path, file_path, range(1,7), [1], transform=normalize)
-    test_set = dataset_class(csv_path, file_path, [rand_num], [1], transform=normalize)
+    train_set = dataset_class(csv_path, file_path, range(1,7), [0],transform=False)
+    val_set = dataset_class(csv_path, file_path, range(1,7), [1], transform=False)
+    test_set = dataset_class(csv_path, file_path, [rand_num], [1], transform=False)
 
     print("Train set size: " + str(len(train_set)))
     print("Validation set size: " + str(len(val_set)))

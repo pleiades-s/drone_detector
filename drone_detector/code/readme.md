@@ -13,5 +13,3 @@
 5. [network.py](https://github.com/pleiades-s/drone_detector/blob/master/drone_detector/code/network.py): Neural network architecture implementation
 
 6. [print_test.py](https://github.com/pleiades-s/drone_detector/blob/master/drone_detector/code/print_test.py): print test result
-
-7. [wav2.py](https://github.com/pleiades-s/drone_detector/blob/master/drone_detector/code/wav2.py): record via two microphone at the same time

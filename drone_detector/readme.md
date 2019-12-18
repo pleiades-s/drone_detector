@@ -17,3 +17,7 @@
   
 5. [output_log](https://github.com/pleiades-s/drone_detector/tree/master/drone_detector/output_log)
    * text files which contain model train output log
+   
+6. [raspberrypi3](https://github.com/pleiades-s/drone_detector/tree/master/drone_detector/raspberrypi3)
+   * python wheels to download pytorch on raspberry pi 3
+   * record audio on raspberry pi 3

@@ -28,8 +28,8 @@ batch_size = 64
 
 for path in name:
 
-    csv_path = '/home/stealthdrone/Desktop/data/csv/' + path + '.csv' 
-    file_path = '/home/stealthdrone/Desktop/data/trimmed/' + path 
+    csv_path = os.getcwd().split('code')[0]+'data/csv/' + path + '.csv' 
+    file_path = os.getcwd().split('code')[0]+'data/trimmed/' + path 
 
     metaData = pd.read_csv(csv_path)
     dataset = dronedataset.MFCC_1D(csv_path, file_path, range(1, 7), range(0,2))
@@ -57,7 +57,7 @@ for path in name:
     print(mean.shape)
     print(std.shape)
 
-    f = open("/home/stealthdrone/Desktop/output_log/MFCC_mean_std_"+path, "w")
+    f = open(os.getcwd().split('code')[0]+"output_log/MFCC_mean_std_"+path, "w")
 
     f.write("MEAN\n{}\n\n".format(mean))
     f.write("STD\n{}\n\n".format(std))

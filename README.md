@@ -52,6 +52,10 @@ What things you need to install the software and how to install them:
    conda install -c anaconda scipy
    conda install -c conda-forge tqdm
    ```   
+   
+ 4. 라즈베리파이3
+ 
+ 
 
 ## Usage
 

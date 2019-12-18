@@ -40,8 +40,8 @@ print("model_dir_path: {}\nmodel_path: {}\nmodel_name: {}\ndata_length: {}"
 
 # for data_length in data_length_list:
 
-csv_path = '/home/stealthdrone/Desktop/data/csv/test_' + data_length + '.csv' 
-file_path = '/home/stealthdrone/Desktop/data/trimmed/test/' + data_length
+csv_path = os.getcwd().split('code')[0]+'data/csv/test_' + data_length + '.csv' 
+file_path = os.getcwd().split('code')[0]+'data/trimmed/test/' + data_length
 
     
 if model_name != 'resnet50':
@@ -68,7 +68,7 @@ kwargs = {'num_workers': 1, 'pin_memory': True} if device == 'cuda' else {} #nee
 
 test_loader = torch.utils.data.DataLoader(test_set, batch_size=test_batch, shuffle=False, **kwargs)
 
-f = open("/home/stealthdrone/Desktop/output_log/inference_"+ model_name + '_' 
+f = open(os.getcwd().split('code')[0]+"output_log/inference_"+ model_name + '_' 
     + data_length + "_output.txt", "w")
 print_test.inference_print(model, test_loader, f)
 

@@ -29,7 +29,7 @@ What things you need to install the software and how to install them:
    
 2. Second and easier option is to download anaconda and use its anaconda prompt to run the commands. To install anaconda check this url https://www.anaconda.com/download/
 
-3. You will also need to download and install below 3 packages, 2 libraries after you install either python or anaconda from the steps above
+3. You will also need to download and install below 3 packages, 2 libraries after you install either python or anaconda from the steps above.
    - pytorch 
    - librosa
    - numpy
@@ -67,7 +67,7 @@ Those steps will be automatically executed by using the command below so you can
 ./execute.sh
 ```
 
-Also you can remove all the dataset with cmd bleow
+Also you can remove all the dataset with command bleow.
 ```
 ./clear.sh
 ```
@@ -86,7 +86,7 @@ There are three different data length(0.1, 0.5, 1.0 second) as a input size so l
 (*0.1, 0.5 and 1.0 are ONLY available*)
 If the arguments are more than one, then the models will be triained in a row.
 
-You can train a model with a command below
+You can train a model with a command below.
 ```
 python3 [model] [input length]
 ```
@@ -104,7 +104,7 @@ python3 transfer_learning.py 1.0 0.5 0.1
 
 You can inference trained model with [*inference.py*](https://github.com/pleiades-s/drone_detector/blob/master/drone_detector/code/inference.py) on test set.
 
-You can train a model with a command below
+You can train a model with a command below.
 ```
 python3 inference.py [trained model(.pth format)]
 ```
@@ -113,6 +113,12 @@ python3 inference.py [trained model(.pth format)]
 ```
 python3 inference.py ../model/Conv_Lstm_mfcc_1_2019-11-19_19:50:20.pth
 ```
+
+*If you want to inference on Raspberry Pi 3, please check this repository below.*
+
+*It might help you to install pytorch on Raspberry Pi 3*
+* [detector_on_pi](https://github.com/yeoseunghyun/detector_on_pi)
+
 
 ## Authors
 

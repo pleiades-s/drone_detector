@@ -62,7 +62,7 @@ You can use dataset collected in person. There are 3 stages for preparing datase
   2. Augment the extracted audio file. 
   3. Split the augmented audio file into various length.
   
-Those steps will be automatically executed by using the command below so you can use our dataset for train and test.
+Those steps will be automatically executed by using the command below when you are on [data](https://github.com/pleiades-s/drone_detector/tree/master/drone_detector/data) directory so you can use our dataset for train and test.
 ```
 ./execute.sh
 ```

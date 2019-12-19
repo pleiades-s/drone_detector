@@ -114,8 +114,9 @@ class MFCC_2D(Dataset):
         #print("soundformat shape:", soundFormatted.shape)
         
         soundFormatted = torch.from_numpy(mfcc).float()
-        soundFormatted = torch.unsqueeze(soundFormatted, dim=0)
-        # soundFormatted = torch.cat((soundFormatted,soundFormatted,soundFormatted))
+        soundFormatted = torch.cat((soundFormatted,soundFormatted,soundFormatted)) #?? size 확인하기
+#         soundFormatted = torch.unsqueeze(soundFormatted, dim=0)
+#         soundFormatted = torch.cat((soundFormatted,soundFormatted,soundFormatted))
 
         return soundFormatted, self.labels[index]
   

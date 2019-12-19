@@ -17,3 +17,7 @@ for name in namelist:
         except OSError as e:
             print("fail")
 
+try:
+    os.makedirs(os.path.join('Drone_audio_test'))
+except OSError as e:
+    print("fail")
